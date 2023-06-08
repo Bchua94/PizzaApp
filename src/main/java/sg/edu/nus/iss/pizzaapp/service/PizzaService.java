@@ -38,9 +38,6 @@ public class PizzaService {
     private final Set<String> pizzaSizes;
     
 
-    @Value("${revision.pizza.api.url}")
-    private String restPizzaUrl;
-
     public PizzaService(){
         pizzaNames = new HashSet<String>(Arrays.asList(PIZZA_NAMES));
         pizzaSizes = new HashSet<String>(Arrays.asList(PIZZA_SIZES));
